@@ -1,0 +1,104 @@
+/* Variables */
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+}
+
+/* General */
+html,
+body {
+    height: 100%;
+}
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+}
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: grid;
+    place-items: center; */
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: center;
+    background-color: var(--dark-cyan);
+    background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw), left calc(40vw + 25%) top calc(72vh - 10vw);
+}
+
+
+h2,
+.number {
+    color: var(--very-dark-desaturated-blue);
+}
+h2 {
+    display: inline-block;
+    padding: 1.3rem 0 .44rem;
+}
+
+/* Card  */
+.card {
+    padding-top: 5.1rem;
+    width: 18.1rem;
+    background: url('images/bg-pattern-card.svg') white no-repeat;
+    border-radius: 15px;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    outline: 0.5rem solid white;
+    border-radius:  50%;
+}
+.age,
+.location,
+.text {
+    color: var(--dark-grayish-blue);
+}
+.age {
+    padding-left: 0.47rem;
+    font-size: 1.2rem;
+}
+.location {
+    margin-bottom: 1.5rem;
+    font-size: 0.77rem;
+}
+hr {
+    border-top: #E8E9EC;
+}
+.stats {
+    padding: 1.3rem 2.7rem 1.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+.likes {
+    margin: 0 0.5rem;
+}
+.number {
+    font-weight: bold;
+}
+.text {
+    font-size: 0.55rem;
+    letter-spacing: 2px;
+}
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
+
+@media (min-width: 400px) {
+    body {
+        background-position: right calc(47vw + 15%) bottom calc(65vh - 17vw), left calc(50vw + 25%) top calc(60vh - 10vw);;
+    }
+    .card {
+        width: 19.44rem;
+    }
+}
