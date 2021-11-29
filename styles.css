@@ -20,13 +20,8 @@ html {
     box-sizing: inherit;
 }
 body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* display: grid;
-    place-items: center; */
+    display: grid;
+    place-items: center;
     font-family: 'Kumbh Sans', sans-serif;
     text-align: center;
     background-color: var(--dark-cyan);
